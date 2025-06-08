@@ -1,0 +1,5 @@
+.DS_Store
+secrets.txt
+
+#remove all files with extension .log->cl
+*.log 
