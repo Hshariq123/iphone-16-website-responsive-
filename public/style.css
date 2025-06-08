@@ -80,7 +80,7 @@ body {
 }
 
 /* Responsive: Collapse middle links */
-@media (max-width: 739px) {
+@media (max-width: 833px) {
     #globalNavBar {
         justify-content: space-between;
     }
