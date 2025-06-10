@@ -1,5 +1,5 @@
 html {
-    font-family: "Roboto";
+    font-family: "Nirmala UI ";
 }
 
 body {
@@ -19,109 +19,156 @@ body {
 }
 
 /* nav bar started here */
-/* Parent Flex Container */
+/* === NavBar === */
 #globalNavBar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    gap: clamp(10px, 2vw, 30px);
-    /* Responsive gap */
-    padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: clamp(10px, 2vw, 30px);
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+  position: relative; /* Added to anchor dropdown */
 }
 
-/* Logo */
+#globalNavBar.hovering-main {
+  background-color: white;
+}
+
+/* === Logo === */
 #img-container {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 #logoContainer img {
-    height: 18px;
+  height: 18px;
 }
 
-/* Main Links Container */
+/* === Main Links === */
 #mainLinks {
-    display: flex;
-    justify-content: center;
-    flex-shrink: 1;
-    flex-wrap: nowrap;
-    gap: clamp(20px, 3vw, 50px);
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1;
+  flex-wrap: nowrap;
+  gap: clamp(20px, 3vw, 50px);
+  
 }
-/* Individual Links */
+
 .visible-Menu-Items {
-    text-decoration: none;
-    color: rgb(177, 172, 172);
-    font-size: 13px;
-    white-space: nowrap;
-    flex-shrink: 1;
-    min-width: 0;
-        position: relative;
-}
-.visible-Menu-Items:after {
-    content: '';
-    position: absolute;
-    left: 0;
-transform: none;
-    bottom: -4px;
-    /* Adjust as needed */
-    height: 2px;
-    width: 0;
-    background-color: white;
-    /* Uses the link's text color */
-    transition: width 0.3s ease;
+  text-decoration: none;
+  color: rgb(177, 172, 172);
+  font-size: 13px;
+  white-space: nowrap;
+  flex-shrink: 1;
+  min-width: 0;
+  position: relative;
 }
 
-.visible-Menu-Items:hover::after {
-    width: 100%;
-}
-
-/* Right Icons */
+/* === Right Icons === */
 #moreitems {
-    display: flex;
-    gap: clamp(10px, 1.5vw, 20px);
-    flex-shrink: 1;
-    min-width: 0;
+  display: flex;
+  gap: clamp(10px, 1.5vw, 20px);
+  flex-shrink: 1;
+  min-width: 0;
 }
 
 .visible-Menu-options {
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 1;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 1;
 }
 
 .visible-Menu-options i {
-    font-size: 16px;
-    color: rgb(167, 166, 165);
+  font-size: 16px;
+  color: rgb(167, 166, 165);
 }
 
-/* Responsive: Collapse middle links */
+#menu-icon {
+  display: none;
+}
+
+#bag-icon {
+  display: flex;
+}
+
+/* === Dropdown Container === */
+.nav-item {
+  position: relative;
+}
+
+/* === Dropdown Menu (updated) === */
+.dropdown {
+  position: fixed;
+  top: calc(var(--nav-height, 30px)); /* adjust as needed or set explicitly */
+  left: 0;
+  width: 100vw;
+  background-color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+  padding: 20px 40px;
+  pointer-events: none;
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown a {
+  color: #646464;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* === Show dropdown on hover === */
+.nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* === Responsive Styles === */
 @media (max-width: 833px) {
-    #globalNavBar {
-        justify-content: space-between;
-    }
+  #globalNavBar {
+    justify-content: space-between;
+  }
 
-    #mainLinks {
-        display: none;
-    }
+  #mainLinks {
+    display: none;
+  }
 
-    #img-container {
-        order: 1;
-    }
+  #img-container {
+    order: 1;
+  }
 
-    #moreitems {
-        order: 2;
-    }
+  #moreitems {
+    order: 2;
+  }
 
-    .visible-Menu-options i {
-        font-size: 18px;
-    }
+  .visible-Menu-options i {
+    font-size: 18px;
+  }
 
-    #logoContainer img {
-        height: 20px;
-    }
+  #logoContainer img {
+    height: 20px;
+  }
 
+  #menu-icon {
+    display: flex;
+  }
+
+  #bag-icon {
+    display: none;
+  }
+
+  .dropdown {
+    display: none !important; /* Hide dropdowns on mobile for now */
+  }
 }
 
 /*nav-bar ended here*/
@@ -142,10 +189,12 @@ transform: none;
     padding: 0px;
     display: flex;
 }
-#buy-now-link{
+
+#buy-now-link {
     text-decoration: none;
     color: rgb(66, 151, 255);
 }
+
 #phoneTitleHeadingContainer {
     display: flex;
     justify-content: center;

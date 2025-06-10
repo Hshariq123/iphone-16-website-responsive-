@@ -1,3 +1,15 @@
+ const globalNav = document.getElementById('globalNavBar');
+  const mainLinks = document.getElementById('mainLinks');
+
+  mainLinks.addEventListener('mouseenter', () => {
+    globalNav.classList.add('hovering-main');
+  });
+
+  mainLinks.addEventListener('mouseleave', () => {
+    globalNav.classList.remove('hovering-main');
+  });
+
+  
 // ====== Slideshow ======
 
 const slideshowContainer = document.querySelector("#slideshow-image-container");
