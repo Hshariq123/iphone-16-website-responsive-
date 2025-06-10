@@ -351,7 +351,7 @@ body {
 #img-link-container #link-items-container #item1 {
     width: 25px;
     border-radius: 15px;
-    background-color: black;
+    background-color: rgb(102, 102, 102);
     transform: scale(1.1);
 }
 
@@ -361,7 +361,7 @@ body {
     background: rgb(218, 216, 216);
     border-radius: 50%;
     border: none;
-    color: rgb(167, 166, 165);
+    color: rgb(61, 60, 59);
     font-size: 10px;
     vertical-align: middle;
     padding: 0;
@@ -373,12 +373,6 @@ body {
 }
 
 
-#slide-play-button:hover,
-#slide-play-button:focus {
-    color: rgb(100, 100, 100);
-    /* darker on hover/focus */
-    outline: none;
-}
 
 /* === Color iPhones Section === */
 #color-iphones-section {
