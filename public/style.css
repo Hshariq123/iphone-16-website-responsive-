@@ -225,13 +225,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
 }
 
 #appleIntelligenceImg {
     height: auto;
     width: 70%;
-    background-color: #646464;
 }
 
 #appleImageContainer {
@@ -242,7 +240,6 @@ body {
   overflow: hidden; /* optional: prevents scrollbars */
   padding: 0;
   margin: 0;
-  background-color: #005bb5;
 
 }
 #appleImageContainer picture,#appleImageContainer img{
