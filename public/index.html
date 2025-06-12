@@ -135,8 +135,9 @@
         <div id="offer-Banner">
           <div id="offer-Banner-Content-Container">
             <p id="offer-Banner-Paragraph">
-              Get iPhone 16 from just ₹6325.00/mo. for up to 12 mo.‡ with No Cost
-              EMI and instant cashback. <a href="#" id="buy-now-link">Buy></a>
+              Get iPhone 16 from just ₹6325.00/mo. for up to 12 mo.‡ with No
+              Cost EMI and instant cashback.
+              <a href="#" id="buy-now-link">Buy></a>
             </p>
           </div>
         </div>
@@ -156,22 +157,33 @@
           </div>
           <div id="appleImageContainer">
             <picture id="imageApple">
-              <!-- For small screens, likely portrait orientation -->
-              <!-- For larger screens -->
+              <!-- Large screen: >1175px -->
               <source
-                media="(min-width: 700px)"
-                srcset="hero_endframe__dtznvlokjeeu_xlarge_2x.png"
-              />
-              <source
-                media="(max-width: 528px)"
-                srcset="mobile-hero_endframe__dtznvlokjeeu_xsmall_2x.png"
+                media="(min-width: 1175px)"
+                srcset="hero_endframe__dtznvlokjeeu_large_2x.png"
               />
 
+              <!-- Medium screen: 800px to 1174px -->
+              <source
+                media="(min-width: 810px)"
+                srcset="
+                  hero_endframe__dtznvlokjeeu_medium_2x.png
+                "
+              />
+
+              <!-- Small screen: 531px to 799px -->
+              <source media="(min-width: 531px)" srcset="hero_endframe__dtznvlokjeeu_small_2x.png" />
+
+              <!-- Extra small screen: <=530px -->
+              <source
+                media="(max-width: 530px)"
+                srcset="hero_endframe__dtznvlokjeeu_xsmall_2x.png"
+              />
 
               <!-- Fallback image -->
               <img
-                src="hero_endframe__dtznvlokjeeu_xlarge_2x.png"
-                alt="Responsive Image"
+                src="hero_endframe__dtznvlokjeeu_xsmall_2x.png"
+                alt="Responsive Apple Image"
               />
             </picture>
           </div>

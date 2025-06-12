@@ -135,9 +135,10 @@ body {
 }
 
 /* === Responsive Styles === */
-@media (max-width: 833px) {
+@media (max-width: 922px) {
     #globalNavBar {
         justify-content: space-between;
+            padding: 14.5px 20px;
     }
 
     #mainLinks {
@@ -184,12 +185,13 @@ body {
     color: white;
     background-color: rgb(0, 0, 0);
     max-width: 80%;
-    font-size: 15px;
+
 }
 #offer-Banner-Paragraph{
     text-align: center;
     margin: 2px;
     padding: 0px;
+        font-size: 15px;
 }
 #offer-Banner-Paragraph a{
     display: inline-block;
@@ -207,18 +209,32 @@ body {
 }
 
 #phoneTitleHeadingContainer h1 {
-        font-size: 26px;
-    margin-top: 80px;
-    margin-bottom: 0px;
-    padding: 3px 0px;
-    background-color: black;
-    color: rgb(255, 255, 255);
-    width: 57%;
-    text-align: center;
+        font-size: 29px;
+        margin-top: 80px;
+        margin-bottom: 0px;
+        padding: 1px 0px;
+        background-color: black;
+        color: rgb(255, 255, 255);
+        width: 865px;
+        text-align: center;
+    }
+    @media screen and (max-width:1175px){
+        #phoneTitleHeadingContainer h1 {
+            width: 575px;
+            font-size: 25px;
+    }
 }
-@media screen and (max-width:1175px){
+    @media screen and (max-width:800px){
+        #phoneTitleHeadingContainer h1 {
+            width: 400px;
+            font-size: 22px;
+    }
+}
+@media screen and (max-width:531px){
     #phoneTitleHeadingContainer h1 {
-        width: 50%;
+        width: 430px;
+        margin-top: 30px;
+        font-size: 22px;
     }
 }
 #AI-Container {
@@ -231,20 +247,20 @@ body {
     height: auto;
     width: 70%;
 }
-
 #appleImageContainer {
   width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* optional: prevents scrollbars */
-  padding: 0;
-  margin: 0;
-
+  overflow: hidden;
 }
-#appleImageContainer picture,#appleImageContainer img{
+
+#appleImageContainer img {
   width: 100%;
   height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 #buyBox {
