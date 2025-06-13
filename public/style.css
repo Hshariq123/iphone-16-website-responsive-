@@ -1,5 +1,5 @@
 html {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -138,7 +138,7 @@ body {
 @media (max-width: 922px) {
     #globalNavBar {
         justify-content: space-between;
-            padding: 14.5px 20px;
+        padding: 14.5px 20px;
     }
 
     #mainLinks {
@@ -164,6 +164,7 @@ body {
     #menu-icon {
         display: flex;
     }
+
     .dropdown {
         display: none !important;
         /* Hide dropdowns on mobile for now */
@@ -187,14 +188,16 @@ body {
     max-width: 80%;
 
 }
-#offer-Banner-Paragraph{
+
+#offer-Banner-Paragraph {
     text-align: center;
     margin: 1px;
     padding: 0px;
-        font-size: 15px;
-        line-height: 1.5;
+    font-size: 15px;
+    line-height: 1.5;
 }
-#offer-Banner-Paragraph a{
+
+#offer-Banner-Paragraph a {
     display: inline-block;
 }
 
@@ -208,16 +211,18 @@ body {
     justify-content: center;
 
 }
+
 #phoneTitleHeadingContainer h1 {
-        font-size: 29px;
-        margin-top: 80px;
-        margin-bottom: 0px;
-        padding: 1px 0px;
-        background-color: black;
-        color: rgb(255, 255, 255);
-        width: 865px;
-        text-align: center;
-    }
+    font-size: 29px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+    padding: 1px 0px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 865px;
+    text-align: center;
+}
+
 #AI-Container {
     display: flex;
     justify-content: center;
@@ -226,47 +231,55 @@ body {
 }
 
 #appleImageContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7px;
 }
 
-    @media screen and (max-width:1175px){
-        #phoneTitleHeadingContainer h1 {
-            width: 575px;
-            font-size: 25px;
+@media screen and (max-width:1175px) {
+    #phoneTitleHeadingContainer h1 {
+        width: 575px;
+        font-size: 25px;
     }
+
     #AI-Container {
         height: 60px;
     }
+
     #appleImageContainer {
         margin-top: -2px;
     }
-    
+
 }
-@media screen and (max-width:800px){
+
+@media screen and (max-width:800px) {
     #phoneTitleHeadingContainer h1 {
         width: 390px;
         font-size: 22px;
-        margin-top:107px;
+        margin-top: 107px;
     }
+
     #AI-Container {
         height: 50px;
     }
+
     #appleImageContainer {
         margin-top: 4px;
     }
 }
-@media screen and (max-width:531px){
+
+@media screen and (max-width:531px) {
     #phoneTitleHeadingContainer h1 {
         width: 430px;
         margin-top: 32px;
         font-size: 22px;
     }
+
     #AI-Container {
         height: 55px;
     }
+
     #appleImageContainer {
         margin-top: -45px;
     }
