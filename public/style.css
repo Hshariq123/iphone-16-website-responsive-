@@ -232,9 +232,6 @@ body {
   margin-top: 7px;
 }
 
-#appleImageContainer img {
-}
-
     @media screen and (max-width:1175px){
         #phoneTitleHeadingContainer h1 {
             width: 575px;
