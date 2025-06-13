@@ -26,7 +26,7 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     gap: clamp(10px, 2vw, 30px);
-    padding: 13px 20px;
+    padding: 13.5px 20px;
     background-color: transparent;
     transition: background-color 0.3s ease;
     z-index: 1000;
@@ -178,7 +178,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 18px 0;
+    padding: 16px 0;
 }
 
 #offer-Banner-Content-Container {
@@ -189,9 +189,10 @@ body {
 }
 #offer-Banner-Paragraph{
     text-align: center;
-    margin: 2px;
+    margin: 1px;
     padding: 0px;
         font-size: 15px;
+        line-height: 1.5;
 }
 #offer-Banner-Paragraph a{
     display: inline-block;
@@ -207,7 +208,6 @@ body {
     justify-content: center;
 
 }
-
 #phoneTitleHeadingContainer h1 {
         font-size: 29px;
         margin-top: 80px;
@@ -218,49 +218,61 @@ body {
         width: 865px;
         text-align: center;
     }
+#AI-Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+#appleImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7px;
+}
+
+#appleImageContainer img {
+}
+
     @media screen and (max-width:1175px){
         #phoneTitleHeadingContainer h1 {
             width: 575px;
             font-size: 25px;
     }
+    #AI-Container {
+        height: 60px;
+    }
+    #appleImageContainer {
+        margin-top: -2px;
+    }
+    
 }
-    @media screen and (max-width:800px){
-        #phoneTitleHeadingContainer h1 {
-            width: 400px;
-            font-size: 22px;
+@media screen and (max-width:800px){
+    #phoneTitleHeadingContainer h1 {
+        width: 390px;
+        font-size: 22px;
+        margin-top:107px;
+    }
+    #AI-Container {
+        height: 50px;
+    }
+    #appleImageContainer {
+        margin-top: 4px;
     }
 }
 @media screen and (max-width:531px){
     #phoneTitleHeadingContainer h1 {
         width: 430px;
-        margin-top: 30px;
+        margin-top: 32px;
         font-size: 22px;
     }
-}
-#AI-Container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#appleIntelligenceImg {
-    height: auto;
-    width: 70%;
-}
-#appleImageContainer {
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-
-#appleImageContainer img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
+    #AI-Container {
+        height: 55px;
+    }
+    #appleImageContainer {
+        margin-top: -45px;
+    }
 }
 
 #buyBox {

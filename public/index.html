@@ -150,10 +150,45 @@
             <h1>iPhone 16</h1>
           </div>
           <div id="AI-Container">
-            <img
-              id="appleIntelligenceImg"
-              src="hero_apple_intelligence_headline__cmswkbn7y6j6_xlarge_2x.png"
-            />
+            <picture id="appleIntelligenceImg">
+              <source
+                media="(min-width: 1175px)"
+                srcset="
+                  hero_apple_intelligence_headline__cmswkbn7y6j6_large_2x.png
+                "
+                width="820px"
+              />
+
+              <!-- Medium screen: 800px to 1174px -->
+              <source
+                media="(min-width: 800px)"
+                srcset="
+                  hero_apple_intelligence_headline__cmswkbn7y6j6_medium_2x.png
+                "
+                width="525px"
+              />
+
+              <!-- Small screen: 531px to 799px -->
+              <source
+                media="(min-width: 531px)"
+                srcset="
+                  hero_apple_intelligence_headline__cmswkbn7y6j6_small_2x.png
+                "
+                  width="350px"
+                  />
+                  
+                  <!-- Extra small screen: <=530px -->
+                  <source
+                  media="(max-width: 530px)"
+                  srcset="
+                  hero_apple_intelligence_headline__cmswkbn7y6j6_xsmall_2x.png
+                  "
+                  width="500px"
+              />
+              <img
+                src="hero_apple_intelligence_headline__cmswkbn7y6j6_xsmall_2x.png"
+              />
+            </picture>
           </div>
           <div id="appleImageContainer">
             <picture id="imageApple">
@@ -161,23 +196,28 @@
               <source
                 media="(min-width: 1175px)"
                 srcset="hero_endframe__dtznvlokjeeu_large_2x.png"
-              />
-
-              <!-- Medium screen: 800px to 1174px -->
-              <source
-                media="(min-width: 810px)"
-                srcset="
-                  hero_endframe__dtznvlokjeeu_medium_2x.png
-                "
-              />
-
-              <!-- Small screen: 531px to 799px -->
-              <source media="(min-width: 531px)" srcset="hero_endframe__dtznvlokjeeu_small_2x.png" />
-
-              <!-- Extra small screen: <=530px -->
-              <source
+                width="1085px"
+                />
+                
+                <!-- Medium screen: 800px to 1174px -->
+                <source
+                media="(min-width: 800px)"
+                srcset="hero_endframe__dtznvlokjeeu_medium_2x.png"
+                width="770px"
+                />
+                
+                <!-- Small screen: 531px to 799px -->
+                <source
+                media="(min-width: 531px)"
+                srcset="hero_endframe__dtznvlokjeeu_small_2x.png"
+                width="510px"
+                />
+                
+                <!-- Extra small screen: <=530px -->
+                <source
                 media="(max-width: 530px)"
                 srcset="hero_endframe__dtznvlokjeeu_xsmall_2x.png"
+                width="500px"
               />
 
               <!-- Fallback image -->
