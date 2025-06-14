@@ -6,6 +6,11 @@ body {
     margin: 0;
     padding: 0;
 }
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 #background-Gradient {
     background: linear-gradient(180deg,
@@ -228,6 +233,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 90px;
+      overflow: hidden;
+  width: 100%;
 }
 
 #appleImageContainer {
@@ -236,7 +243,12 @@ body {
     align-items: center;
     margin-top: 7px;
 }
-
+#appleIntelligenceImg img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
 @media screen and (max-width:1175px) {
     #phoneTitleHeadingContainer h1 {
         width: 575px;
