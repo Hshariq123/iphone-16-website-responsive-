@@ -6,10 +6,11 @@ body {
     margin: 0;
     padding: 0;
 }
+
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 #background-Gradient {
@@ -233,8 +234,8 @@ img {
     justify-content: center;
     align-items: center;
     height: 90px;
-      overflow: hidden;
-  width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 #appleImageContainer {
@@ -243,58 +244,12 @@ img {
     align-items: center;
     margin-top: 7px;
 }
+
 #appleIntelligenceImg img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-@media screen and (max-width:1175px) {
-    #phoneTitleHeadingContainer h1 {
-        width: 575px;
-        font-size: 25px;
-    }
-
-    #AI-Container {
-        height: 60px;
-    }
-
-    #appleImageContainer {
-        margin-top: -2px;
-    }
-
-}
-
-@media screen and (max-width:800px) {
-    #phoneTitleHeadingContainer h1 {
-        width: 390px;
-        font-size: 22px;
-        margin-top: 107px;
-    }
-
-    #AI-Container {
-        height: 50px;
-    }
-
-    #appleImageContainer {
-        margin-top: 4px;
-    }
-}
-
-@media screen and (max-width:531px) {
-    #phoneTitleHeadingContainer h1 {
-        width: 430px;
-        margin-top: 32px;
-        font-size: 22px;
-    }
-
-    #AI-Container {
-        height: 55px;
-    }
-
-    #appleImageContainer {
-        margin-top: -45px;
-    }
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 #buyBox {
@@ -335,10 +290,72 @@ img {
 .section-title {
     font-size: 4vw;
     color: rgb(40, 39, 39);
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-/* === Slideshow Section - Updated === */
+@media screen and (max-width:1175px) {
+    #phoneTitleHeadingContainer h1 {
+        width: 575px;
+        font-size: 25px;
+    }
+
+    #AI-Container {
+        height: 60px;
+    }
+
+    #appleImageContainer {
+        margin-top: -2px;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    #phoneTitleHeadingContainer h1 {
+        width: 390px;
+        font-size: 22px;
+        margin-top: 107px;
+    }
+
+    #AI-Container {
+        height: 50px;
+    }
+
+    #appleImageContainer {
+        margin-top: 4px;
+    }
+        .right-shifted-section {
+        margin-left: 30px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:531px) {
+    #phoneTitleHeadingContainer h1 {
+        width: 430px;
+        margin-top: 32px;
+        font-size: 22px;
+    }
+
+    #AI-Container {
+        height: 55px;
+    }
+
+    #appleImageContainer {
+        margin-top: -45px;
+    }
+
+    .right-shifted-section {
+        margin-left: 20px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
+
 #section-slideshow {
     margin-bottom: 50px;
 }
