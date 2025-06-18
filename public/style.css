@@ -244,14 +244,6 @@ img {
     align-items: center;
     margin-top: 7px;
 }
-
-#appleIntelligenceImg img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-}
-
 #buyBox {
     display: flex;
     flex-direction: column;
@@ -334,9 +326,9 @@ img {
 
 @media screen and (max-width:531px) {
     #phoneTitleHeadingContainer h1 {
-        width: 430px;
+        width: 80%;
         margin-top: 32px;
-        font-size: 22px;
+        font-size: 4vw;
     }
 
     #AI-Container {
