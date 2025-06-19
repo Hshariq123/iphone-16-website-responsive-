@@ -256,7 +256,7 @@ img {
     background-color: #0071e3;
     /* Apple's standard blue */
     color: white;
-    padding: 10px 15px;
+    padding: 12px 16.5px;
     /* Space inside the button */
     margin: 20px 0;
     /* Space around the button */
@@ -274,17 +274,19 @@ img {
     /* Slightly darker on hover */
     cursor: pointer;
 }
-
-.right-shifted-section {
-    margin-left: 80px;
+#detail-pricing{
+    font-size: 17px;
+    font-weight: normal;
 }
 
 .section-title {
-    font-size: 4vw;
+    font-size: 53px;
     color: rgb(40, 39, 39);
-    margin-bottom: 50px;
+    margin-bottom: 75px;
 }
-
+    .right-shifted-section{
+        margin-left: 65px;
+    }
 @media screen and (max-width:1175px) {
     #phoneTitleHeadingContainer h1 {
         width: 575px;
@@ -297,6 +299,12 @@ img {
 
     #appleImageContainer {
         margin-top: -2px;
+    }
+        .section-title {
+        font-size: 45px;
+    }
+    .right-shifted-section{
+        margin-left: 50px;
     }
 
 }
@@ -315,12 +323,9 @@ img {
     #appleImageContainer {
         margin-top: 4px;
     }
-        .right-shifted-section {
-        margin-left: 30px;
-    }
 
     .section-title {
-        font-size: 30px;
+        font-size: 32px;
     }
 }
 
@@ -337,10 +342,6 @@ img {
 
     #appleImageContainer {
         margin-top: -45px;
-    }
-
-    .right-shifted-section {
-        margin-left: 20px;
     }
 
     .section-title {
@@ -453,10 +454,6 @@ img {
 /* === Color iPhones Section === */
 #color-iphones-section {
     margin-bottom: 400px;
-}
-
-#color-choices-title {
-    margin-left: 80px;
 }
 
 #color-iphone-container {
