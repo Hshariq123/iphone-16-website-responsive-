@@ -13,7 +13,7 @@
 // ====== Slideshow ======
 
 const slideshowContainer = document.querySelector("#slideshow-image-container");
-const slides = document.querySelectorAll("#slideshow-image-container img");
+const slides = document.querySelectorAll("#slideshow-image-container picture");
 const dots = document.querySelectorAll("#link-items-container li");
 
 // Use the existing play button from HTML
