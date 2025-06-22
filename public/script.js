@@ -22,7 +22,7 @@ const playBtn = document.querySelector("#slide-play-button");
 let slideIndex = 0;
 let autoScrollInterval = null;
 let autoScrollRunning = false;
-const autoScrollDelay = 1000; // 1 second (adjust if needed)
+const autoScrollDelay = 5000; // 1 second (adjust if needed)
 let isAutoScrolling = false;
 
 // Highlight the active dot
@@ -48,7 +48,7 @@ function scrollToSlide(index) {
   // Reset flag after scroll ends
   setTimeout(() => {
     isAutoScrolling = false;
-  }, 500);
+  }, 5000);
 }
 
 // Show the first slide visually on load
@@ -115,7 +115,7 @@ slideshowContainer.addEventListener("scroll", () => {
 
   // Restart auto-scroll if it was running before
   if (wasRunning) {
-    setTimeout(startAutoScroll, 1000);
+    setTimeout(startAutoScroll, 5000);
   }
 });
 
@@ -128,7 +128,7 @@ dots.forEach((dot, index) => {
     scrollToSlide(index);
 
     if (wasRunning) {
-      setTimeout(startAutoScroll, 1000);
+      setTimeout(startAutoScroll, 5000);
     }
   });
 });

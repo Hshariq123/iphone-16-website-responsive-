@@ -244,6 +244,7 @@ img {
     align-items: center;
     margin-top: 7px;
 }
+
 #buyBox {
     display: flex;
     flex-direction: column;
@@ -274,29 +275,22 @@ img {
     /* Slightly darker on hover */
     cursor: pointer;
 }
+
 #detail-pricing {
     font-size: 17px;
     font-weight: normal;
 }
-
 .section-title {
     font-size: 53px;
     color: rgb(40, 39, 39);
     margin-bottom: 75px;
 }
-
-.right-shifted-section {
+#Highlight-section{
     margin-left: 5vw;
+    
 }
-
-
 #section-slideshow {
     margin-bottom: 50px;
-}
-
-#slideshow-image-container::-webkit-scrollbar {
-    display: none;
-    /* Hide scrollbar for WebKit browsers */
 }
 
 #slideshow-image-container {
@@ -304,28 +298,38 @@ img {
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
-    -ms-overflow-style: none;
-    /* Remove margin-left and padding-left to avoid offset */
-    margin-left: 0;
-    padding-left: 0;
-    gap: 20px;
-    /* smaller gap so images can be bigger */
-    width: 100%;
-    /* full viewport width */
+    -ms-overflow-style: none; /* IE/Edge */
     scroll-snap-type: x mandatory;
-    /*smooth snapping*/
+
+    /* Centering logic */
+    padding-left: calc(50vw - 45vw); /* 45vw is half of 90vw (slide width) */
+    padding-right: calc(50vw - 45vw);
+    scroll-padding-left: calc(50vw - 45vw);
+    scroll-padding-right: calc(50vw - 45vw);
+
+    margin: 0;
+}
+
+/* Hide scrollbars in WebKit (Chrome, Safari) */
+#slideshow-image-container::-webkit-scrollbar {
+    display: none;
+}
+
+#slideshow-image-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 90vw;
+    overflow: hidden;
+    scroll-snap-align: center;
+    border-radius: 20px;
+    margin-right: 20px; /* Space between slides */
 }
 
 #slideshow-image-container img {
-    border-radius: 30px;
-    width: 90vw;
-    /* almost full viewport width */
-    max-width: none;
-    /* remove max width limit */
-    height: 700px;
+    background-color: #333;
+    height: 100%;
     max-width: 1500px;
-    flex-shrink: 0;
-    scroll-snap-align: start;
     transition: opacity 0.4s ease;
     cursor: pointer;
 }
@@ -333,6 +337,78 @@ img {
 
 #slideshow-image-container img:hover {
     opacity: 0.9;
+}
+
+@media screen and (max-width:1175px) {
+    #phoneTitleHeadingContainer h1 {
+        width: 575px;
+        font-size: 25px;
+    }
+
+    #AI-Container {
+        height: 60px;
+    }
+
+    #appleImageContainer {
+        margin-top: -2px;
+    }
+
+    .section-title {
+        font-size: 45px;
+    }
+
+    #slideshow-image-container div picture {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    #phoneTitleHeadingContainer h1 {
+        width: 390px;
+        font-size: 22px;
+        margin-top: 107px;
+    }
+
+    #AI-Container {
+        height: 50px;
+    }
+
+    #appleImageContainer {
+        margin-top: 4px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    #slideshow-image-container div picture {
+        height: 550px;
+    }
+
+}
+
+@media screen and (max-width:531px) {
+    #phoneTitleHeadingContainer h1 {
+        width: 80%;
+        margin-top: 32px;
+        font-size: 4vw;
+    }
+
+    #AI-Container {
+        height: 55px;
+    }
+
+    #appleImageContainer {
+        margin-top: -45px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    #slideshow-image-container div picture {
+        height: 500px;
+    }
 }
 
 #img-link-container {
@@ -389,75 +465,6 @@ img {
     justify-content: center;
     transition: color 0.3s ease;
     padding: 15px;
-}
-
-@media screen and (max-width:1175px) {
-    #phoneTitleHeadingContainer h1 {
-        width: 575px;
-        font-size: 25px;
-    }
-
-    #AI-Container {
-        height: 60px;
-    }
-
-    #appleImageContainer {
-        margin-top: -2px;
-    }
-
-    .section-title {
-        font-size: 45px;
-    }
-        #slideshow-image-container img {
-        height: 600px;
-    }
-}
-
-@media screen and (max-width:800px) {
-    #phoneTitleHeadingContainer h1 {
-        width: 390px;
-        font-size: 22px;
-        margin-top: 107px;
-    }
-
-    #AI-Container {
-        height: 50px;
-    }
-
-    #appleImageContainer {
-        margin-top: 4px;
-    }
-
-    .section-title {
-        font-size: 32px;
-    }
-        #slideshow-image-container img {
-        height: 550px;
-    }
-
-}
-
-@media screen and (max-width:531px) {
-    #phoneTitleHeadingContainer h1 {
-        width: 80%;
-        margin-top: 32px;
-        font-size: 4vw;
-    }
-
-    #AI-Container {
-        height: 55px;
-    }
-
-    #appleImageContainer {
-        margin-top: -45px;
-    }
-
-    .section-title {
-        font-size: 26px;
-    }
-    #slideshow-image-container img {
-        height: 500px;
-    }
 }
 
 /* === Color iPhones Section === */
